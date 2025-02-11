@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hp_hn_ly/appointment_url_button.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -24,16 +25,7 @@ class ContactSection extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              // Action for button
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xFF15C39A),
-              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-            ),
-            child: Text('Kontakt'),
-          ),
+          AppointmentUrlButton(),
         ],
       ),
     );
